@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-// Pattern A: memo wraps the function definition inline.
+// React.memo wraps the function definition inline.
 //
 // Expected: react-hooks/set-state-in-effect and react-hooks/refs should fire.
 // Actual:   eslint-plugin-react-hooks@7.1.1 reports NO violations here.
-const InlineMemoComponent = React.memo(function InlineMemoComponent({ value }) {
+const InlineReactMemoComponent = React.memo(function InlineReactMemoComponent({ value }) {
   const containerRef = useRef(null);
   const [height, setHeight] = useState(0);
 
@@ -25,4 +25,4 @@ const InlineMemoComponent = React.memo(function InlineMemoComponent({ value }) {
   );
 });
 
-export default InlineMemoComponent;
+export default InlineReactMemoComponent;

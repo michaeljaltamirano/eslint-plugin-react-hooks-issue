@@ -1,6 +1,6 @@
 import { memo, useState, useRef, useEffect } from 'react';
 
-// Pattern A: memo wraps the function definition inline.
+// memo wraps the function definition inline.
 //
 // Expected: react-hooks/set-state-in-effect and react-hooks/refs should fire.
 // Actual:   eslint-plugin-react-hooks@7.1.1 reports NO violations here.

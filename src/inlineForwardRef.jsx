@@ -1,10 +1,10 @@
 import { forwardRef, useState, useRef, useEffect } from 'react';
 
-// Pattern A: forwardRef wraps the function definition inline.
+// forwardRef wraps the function definition inline.
 //
 // Expected: react-hooks/set-state-in-effect and react-hooks/refs should fire.
 // Actual:   eslint-plugin-react-hooks@7.1.1 reports NO violations here.
-const InlineForwardRefComponent = forwardRef(function InlineMemoComponent({ value }) {
+const InlineForwardRefComponent = forwardRef(function InlineForwardRefComponent({ value }) {
   const containerRef = useRef(null);
   const [height, setHeight] = useState(0);
 
@@ -25,4 +25,4 @@ const InlineForwardRefComponent = forwardRef(function InlineMemoComponent({ valu
   );
 });
 
-export default InlineMemoComponent;
+export default InlineForwardRefComponent;
