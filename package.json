@@ -1,0 +1,16 @@
+{
+  "name": "eslint-plugin-react-hooks-issue",
+  "version": "1.0.0",
+  "description": "Reproduction: eslint-plugin-react-hooks@7.1.1 reports rules inconsistently based on memo wrapper syntax",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "react": "^18.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "eslint-plugin-react-hooks": "7.1.1"
+  }
+}
